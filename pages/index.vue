@@ -26,11 +26,10 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Logo from '~/components/Logo.vue'
 
 @Component({
   components: {
-    Logo,
+    Logo: () => import('~/components/Logo.vue'),
   },
 })
 export default class Index extends Vue {}
