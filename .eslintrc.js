@@ -24,6 +24,14 @@ module.exports = {
   // add your custom rules here
   rules: {
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error"
+    "@typescript-eslint/no-unused-vars": "error",
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        singleQuote: true,
+        trailingComma: 'es5',
+      },
+    ],
   }
 }
